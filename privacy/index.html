@@ -1,0 +1,156 @@
+<!doctype html>
+<!--
+  AVISO / NOTE: plantilla redactada sin asesoria legal; Joan Marc debe revisarla.
+  Template drafted without legal advice; Joan Marc must review it.
+  Fuente: docs/privacy/privacy-policy.es.md y privacy-policy.en.md. Mantener sincronizado con ellos.
+  Seccion 2 comprobada contra com.unity.services.analytics 6.3.0 y com.unity.services.core 1.18.0.
+  Al publicar: rellenar [EMAIL_DE_CONTACTO], [URL_PUBLICADA], [FECHA], resolver los "(verificar)"
+  y borrar los dos bloques <p class="draft"> (uno por idioma).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ColorMix — Política de privacidad / Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --bg:#ffffff; --muted:#555; --accent:#0a58ca; --warn-bg:#fff3cd; --warn-fg:#664d03; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f2f2f2; --bg:#141418; --muted:#b0b0b0; --accent:#8ab4ff; --warn-bg:#3a3000; --warn-fg:#ffe08a; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width: 42rem; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+  nav { display:flex; gap:.75rem; padding: .75rem 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 15%, transparent); }
+  nav a { color:var(--accent); font-weight:600; padding:.4rem .8rem; border-radius:.5rem; border:1px solid currentColor; text-decoration:none; min-height:44px; display:inline-flex; align-items:center; }
+  a { color:var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  h1 { font-size:1.6rem; line-height:1.25; margin:1.25rem 0 .5rem; }
+  h2 { font-size:1.15rem; margin:1.5rem 0 .4rem; }
+  .meta { color:var(--muted); font-size:.95rem; }
+  .draft { background:var(--warn-bg); color:var(--warn-fg); padding:.75rem 1rem; border-radius:.5rem; }
+  /* Selector sin JS: por defecto se ve ES; con #en en la URL se ve EN. Sin soporte de :has() se ven ambas. */
+  #en:not(:target) { display:none; }
+  body:has(#en:target) #es { display:none; }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Idioma / Language">
+  <a href="#es" hreflang="es" lang="es">Español</a>
+  <a href="#en" hreflang="en" lang="en">English</a>
+</nav>
+
+<article id="es" lang="es">
+<h1>Política de privacidad de ColorMix (beta en TestFlight)</h1>
+<p class="draft"><strong>Aviso para Joan Marc (borrar al publicar):</strong> plantilla redactada sin asesoría legal. Revísala, rellena los marcadores entre corchetes y resuelve los puntos marcados con <em>(verificar)</em>, que dependen de tu contrato y tu configuración en Unity, antes de publicarla.</p>
+<p class="meta">Última actualización: [FECHA] · Dirección de esta política: [URL_PUBLICADA]</p>
+<p>ColorMix es un juego de puzzle para iOS en prueba cerrada (beta) distribuido por TestFlight. No tiene cuentas, anuncios ni compras, y no hace seguimiento publicitario: no usa el identificador de publicidad (IDFA) ni pide el permiso de seguimiento de Apple (ATT).</p>
+
+<h2>1. Responsable del tratamiento</h2>
+<p>Joan Marc Sanahuja, persona física con domicilio en España. Contacto: [EMAIL_DE_CONTACTO].</p>
+
+<h2>2. Qué datos tratamos y para qué</h2>
+<p><strong>En tu dispositivo.</strong> Tu progreso, tus ajustes y tu respuesta a la pregunta de analítica se guardan solo en el almacenamiento local de la app. No salen del dispositivo, no tenemos acceso a ellos y se borran al desinstalar la app.</p>
+<p><strong>Analítica, solo si la aceptas.</strong> Hasta que aceptes, la app no activa el servicio de Unity ni envía nada, y lo que ocurra en el juego antes de aceptar no se guarda para enviarlo después. Si aceptas, la app envía a Unity Analytics:</p>
+<ul>
+  <li><strong>Eventos de juego:</strong> inicio de sesión, inicio de nivel, nivel completado (con el número de movimientos y el mínimo del nivel), reinicio de nivel y uso de deshacer. Cada evento incluye el número del nivel y los días transcurridos desde la instalación, calculados en el dispositivo.</li>
+  <li><strong>Eventos automáticos de Unity:</strong> arranque del servicio, inicio y fin de partida, primera ejecución, un aviso periódico mientras juegas y la forma en que terminó la sesión.</li>
+  <li><strong>Identificadores:</strong> varios identificadores aleatorios que genera Unity (de usuario, instalación, jugador y sesión) y el identificador de proveedor de iOS (IDFV), que Apple asigna a cada desarrollador en tu dispositivo. Ninguno está vinculado a tu nombre, email ni Apple ID, y el IDFV no es el identificador de publicidad.</li>
+  <li><strong>Datos técnicos:</strong> versión de la app, identificador del paquete y de la build; modelo del dispositivo y versión del sistema operativo; idioma y región configurados; tipo de procesador y de gráficos, núcleos, memoria y pantalla (resolución y tamaño); nivel de batería y volumen.</li>
+  <li><strong>Hora y ubicación aproximada:</strong> la fecha y hora de cada evento con tu desfase horario respecto a UTC (que indica tu zona horaria aproximada), y tu dirección IP, que llega con la conexión y de la que Unity deduce el país o la región.</li>
+</ul>
+<p>Usamos estos datos para saber cómo se juega (dónde se atasca la gente o qué niveles resultan demasiado fáciles o difíciles) y para detectar problemas técnicos en algunos dispositivos. No los usamos para publicidad ni para crear perfiles que tengan efectos sobre ti, y no los vendemos.</p>
+<p><strong>TestFlight y contacto.</strong> Apple gestiona TestFlight según su propia política de privacidad. Si nos envías comentarios, capturas o informes de fallos por TestFlight, o nos escribes por email, usaremos esos datos (por ejemplo, tu nombre o tu email) solo para gestionar la beta y contestarte.</p>
+
+<h2>3. Base jurídica</h2>
+<ul>
+  <li><strong>Analítica:</strong> tu consentimiento (art. 6.1.a del RGPD). Puedes retirarlo cuando quieras. Retirarlo no afecta a la licitud del tratamiento anterior.</li>
+  <li><strong>Comentarios de la beta y mensajes:</strong> nuestro interés legítimo en gestionar la prueba y contestarte (art. 6.1.f del RGPD).</li>
+</ul>
+
+<h2>4. Encargado del tratamiento</h2>
+<p>Unity Technologies (Unity Gaming Services) almacena y procesa los datos de analítica por cuenta del responsable. Su política de privacidad: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a> <em>(verificar la entidad de Unity con la que se contrata y su papel de encargado en el acuerdo de tratamiento de datos de Unity)</em>.</p>
+
+<h2>5. Transferencias internacionales</h2>
+<p>Unity Technologies tiene su sede en Estados Unidos, así que los datos pueden tratarse allí. La transferencia se ampara en un mecanismo que reconoce el RGPD, como el Marco de Privacidad de Datos UE-EE. UU. o las cláusulas contractuales tipo de la Comisión Europea <em>(verificar cuál aplica en el contrato con Unity)</em>.</p>
+
+<h2>6. Conservación</h2>
+<ul>
+  <li><strong>Analítica:</strong> se conserva mientras dure la beta y, como máximo, 12 meses desde que se recoge. Pasado ese plazo se borra o se anonimiza <em>(verificar que la retención configurada en Unity respeta este plazo)</em>.</li>
+  <li><strong>Si retiras el consentimiento:</strong> la app deja de recoger datos en ese momento y solicita a Unity que borre los asociados a tus identificadores. Si no hay conexión, repite la solicitud la próxima vez que abras la app con conexión. La app no recibe confirmación de que Unity haya terminado el borrado; Unity lo completa en el plazo que indica su documentación <em>(verificar)</em>.</li>
+  <li><strong>Comentarios y mensajes:</strong> hasta que termine la beta, salvo que haga falta guardarlos más tiempo para atender una reclamación.</li>
+  <li><strong>Datos guardados en tu dispositivo:</strong> hasta que borres la app.</li>
+</ul>
+
+<h2>7. Tus derechos</h2>
+<p>Puedes pedir el acceso, la rectificación, la supresión, la limitación o la portabilidad de tus datos, u oponerte a su tratamiento, escribiendo a [EMAIL_DE_CONTACTO].</p>
+<p>Para <strong>retirar el consentimiento</strong>, usa el botón «Privacidad» de la pantalla «Niveles», arriba a la derecha. Así se para la recogida y se solicita el borrado. La analítica no contiene tu nombre ni tu email, así que este botón es la forma más directa de borrarla. Si nos escribes, puede que te pidamos algún dato que nos permita localizar tu instalación.</p>
+<p>Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>) o ante la autoridad de protección de datos de tu país.</p>
+
+<h2>8. Menores</h2>
+<p>La beta no está dirigida a menores de 16 años. Si tienes menos de 16, no aceptes la analítica. Si eres madre, padre o tutor y crees que un menor nos ha enviado datos, escríbenos y los borraremos.</p>
+
+<h2>9. Cambios en esta política</h2>
+<p>Si cambiamos esta política, publicaremos la nueva versión en esta misma dirección con su fecha. Si cambia el texto del consentimiento, la app te volverá a preguntar y no recogerá nada hasta que respondas.</p>
+
+<h2>10. Fecha</h2>
+<p>En vigor desde el [FECHA].</p>
+</article>
+
+<article id="en" lang="en">
+<h1>ColorMix Privacy Policy (TestFlight beta)</h1>
+<p class="draft"><strong>Note for Joan Marc (delete before publishing):</strong> this template was drafted without legal advice. Review it, fill in the bracketed placeholders and resolve the items marked <em>(verify)</em>, which depend on your Unity contract and settings, before publishing.</p>
+<p class="meta">Last updated: [FECHA] · Address of this policy: [URL_PUBLICADA]</p>
+<p>ColorMix is an iOS puzzle game in a closed test (beta) distributed through TestFlight. It has no accounts, ads or purchases, and it does not track you for advertising: it does not use the advertising identifier (IDFA) or ask for Apple's tracking permission (ATT).</p>
+
+<h2>1. Data controller</h2>
+<p>Joan Marc Sanahuja, an individual based in Spain. Contact: [EMAIL_DE_CONTACTO].</p>
+
+<h2>2. What data we process and why</h2>
+<p><strong>On your device.</strong> Your progress, your settings and your answer to the analytics question are stored only in the app's local storage. They never leave your device, we have no access to them, and they are deleted when you uninstall the app.</p>
+<p><strong>Analytics, only if you accept it.</strong> Until you accept, the app does not start Unity's service or send anything, and what happens in the game before you accept is not stored to be sent later. If you accept, the app sends the following to Unity Analytics:</p>
+<ul>
+  <li><strong>Gameplay events:</strong> session start, level start, level completed (with the number of moves and the level's minimum), level restart and use of undo. Each event includes the level number and the number of days since installation, calculated on the device.</li>
+  <li><strong>Automatic Unity events:</strong> service start, game start and end, first launch, a periodic signal while you play, and how the session ended.</li>
+  <li><strong>Identifiers:</strong> several random identifiers generated by Unity (user, installation, player and session) and the iOS identifier for vendor (IDFV), which Apple assigns to each developer on your device. None of them is linked to your name, email or Apple ID, and the IDFV is not the advertising identifier.</li>
+  <li><strong>Technical data:</strong> app version, bundle and build identifiers; device model and operating system version; language and region settings; processor and graphics type, number of cores, memory and screen (resolution and size); battery level and volume.</li>
+  <li><strong>Time and approximate location:</strong> the date and time of each event with your offset from UTC (which shows your approximate time zone), and your IP address, which comes with the connection and from which Unity derives your country or region.</li>
+</ul>
+<p>We use this data to understand how the game is played (for example, where players get stuck or which levels are too easy or too hard) and to spot technical problems on some devices. We do not use it for advertising or to build profiles that affect you, and we do not sell it.</p>
+<p><strong>TestFlight and contact.</strong> Apple runs TestFlight under its own privacy policy. If you send us feedback, screenshots or crash reports through TestFlight, or email us, we will use that data (for example, your name or email) only to run the beta and reply to you.</p>
+
+<h2>3. Legal basis</h2>
+<ul>
+  <li><strong>Analytics:</strong> your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time. Withdrawing it does not affect the lawfulness of earlier processing.</li>
+  <li><strong>Beta feedback and messages:</strong> our legitimate interest in running the test and replying to you (Art. 6(1)(f) GDPR).</li>
+</ul>
+
+<h2>4. Data processor</h2>
+<p>Unity Technologies (Unity Gaming Services) stores and processes analytics data on behalf of the controller. Unity's privacy policy: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a> <em>(verify which Unity entity is the contracting party and its processor role under Unity's data processing terms)</em>.</p>
+
+<h2>5. International transfers</h2>
+<p>Unity Technologies is based in the United States, so your data may be processed there. These transfers rely on a mechanism recognised by the GDPR, such as the EU-U.S. Data Privacy Framework or the European Commission's Standard Contractual Clauses <em>(verify which one applies in the Unity contract)</em>.</p>
+
+<h2>6. Retention</h2>
+<ul>
+  <li><strong>Analytics:</strong> kept for as long as the beta runs and for no more than 12 months from collection, then deleted or anonymised <em>(verify that the retention configured in Unity matches this period)</em>.</li>
+  <li><strong>If you withdraw consent:</strong> the app stops collecting data immediately and asks Unity to delete the data linked to your identifiers. If there is no connection, it repeats the request the next time you open the app with a connection. The app does not receive confirmation that Unity has finished the deletion; Unity completes it within the period stated in its documentation <em>(verify)</em>.</li>
+  <li><strong>Feedback and messages:</strong> until the beta ends, unless we need them for longer to handle a complaint.</li>
+  <li><strong>Data stored on your device:</strong> until you delete the app.</li>
+</ul>
+
+<h2>7. Your rights</h2>
+<p>You can ask to access, correct, erase, restrict or port your data, or object to its processing, by writing to [EMAIL_DE_CONTACTO].</p>
+<p>To <strong>withdraw consent</strong>, use the "Privacy" button at the top right of the "Levels" screen. This stops collection and requests deletion. Analytics data does not contain your name or email, so this button is the most direct way to delete it. If you email us, we may ask for some information that helps us find your installation.</p>
+<p>If you believe we have mishandled your data, you can complain to the Spanish Data Protection Agency (AEPD, <a href="https://www.aepd.es">www.aepd.es</a>) or to the data protection authority in your country.</p>
+
+<h2>8. Children</h2>
+<p>The beta is not intended for anyone under 16. If you are under 16, do not accept analytics. If you are a parent or guardian and believe a child has sent us data, contact us and we will delete it.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If we change this policy, we will publish the new version at this same address with its date. If the consent text changes, the app will ask you again and will not collect anything until you answer.</p>
+
+<h2>10. Date</h2>
+<p>Effective from [FECHA].</p>
+</article>
+</main>
+</body>
+</html>
